@@ -158,7 +158,7 @@ target_include_directories(AlphaUI PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CU
 target_link_libraries(AlphaUI PUBLIC AlphaCore AlphaSDK)
 
 if(WIN32)
-    target_link_libraries(AlphaUI PUBLIC gdi32 comdlg32 user32 dwmapi winmm)
+    target_link_libraries(AlphaUI PUBLIC gdi32 comdlg32 user32 dwmapi winmm shell32)
 endif()
 
 if(ALPHASTUDIO_USE_EXTERNAL_IMGUI)

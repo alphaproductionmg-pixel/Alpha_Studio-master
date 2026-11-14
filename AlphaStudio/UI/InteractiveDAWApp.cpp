@@ -15,6 +15,7 @@
 #include "AlphaStudio/UI/ProjectAndEditorsUI.hpp"
 
 #include <cmath>
+#include <cstdio>
 #include <cstdint>
 #include <cstring>
 #include <filesystem>
