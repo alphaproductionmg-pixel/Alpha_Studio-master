@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSTParametersStructure>
+  <Plugin name="AlphaStudio Standard Channel EQ" uniqueID="1095979857">
+    <Params>
+      <Param id="0" name="Band 1 Gain" shortName="B1Gain" label="dB" group="Low Band"/>
+      <Param id="1" name="Band 1 Freq" shortName="B1Freq" label="Hz" group="Low Band"/>
+      <Param id="2" name="Band 1 Q" shortName="B1Q" label="" group="Low Band"/>
+      <Param id="3" name="Band 2 Gain" shortName="B2Gain" label="dB" group="Low-Mid Band"/>
+      <Param id="4" name="Band 2 Freq" shortName="B2Freq" label="Hz" group="Low-Mid Band"/>
+      <Param id="5" name="Band 2 Q" shortName="B2Q" label="" group="Low-Mid Band"/>
+      <Param id="6" name="Band 3 Gain" shortName="B3Gain" label="dB" group="High-Mid Band"/>
+      <Param id="7" name="Band 3 Freq" shortName="B3Freq" label="Hz" group="High-Mid Band"/>
+      <Param id="8" name="Band 3 Q" shortName="B3Q" label="" group="High-Mid Band"/>
+      <Param id="9" name="Band 4 Gain" shortName="B4Gain" label="dB" group="High Band"/>
+      <Param id="10" name="Band 4 Freq" shortName="B4Freq" label="Hz" group="High Band"/>
+      <Param id="11" name="Band 4 Q" shortName="B4Q" label="" group="High Band"/>
+    </Params>
+  </Plugin>
+</VSTParametersStructure>

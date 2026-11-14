@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<remotedescription version="1.1">
+  <ctrltable name="Standard MIDI">
+    <ctrl name="Transport Play" stat="176" chan="0" addr="115" max="127" flags="1"/>
+    <ctrl name="Transport Stop" stat="176" chan="0" addr="114" max="127" flags="1"/>
+    <ctrl name="Transport Record" stat="176" chan="0" addr="117" max="127" flags="1"/>
+    <ctrl name="Track 1 Select" stat="176" chan="0" addr="20" max="127" flags="1"/>
+    <ctrl name="Track 1 Monitor" stat="176" chan="0" addr="21" max="127" flags="1"/>
+    <ctrl name="Track 1 RecArm" stat="176" chan="0" addr="22" max="127" flags="1"/>
+    <ctrl name="Ch 1 Fader" stat="176" chan="0" addr="7" max="127" flags="3"/>
+    <ctrl name="Ch 1 Pan" stat="176" chan="0" addr="10" max="127" flags="3"/>
+  </ctrltable>
+  <bank name="Main Bank">
+    <entry ctrl="Transport Play" device="Transport" chan="0" action="0" toggle="0"/>
+    <entry ctrl="Transport Stop" device="Transport" chan="0" action="1" toggle="0"/>
+    <entry ctrl="Transport Record" device="Transport" chan="0" action="2" toggle="1"/>
+    <entry ctrl="Track 1 Select" device="Project" chan="0" action="3" toggle="0"/>
+    <entry ctrl="Track 1 Monitor" device="VST Mixer" chan="0" action="4" toggle="1"/>
+    <entry ctrl="Track 1 RecArm" device="VST Mixer" chan="0" action="5" toggle="1"/>
+    <entry ctrl="Ch 1 Fader" device="VST Mixer" chan="0" action="6" toggle="0"/>
+    <entry ctrl="Ch 1 Pan" device="VST Mixer" chan="0" action="7" toggle="0"/>
+  </bank>
+</remotedescription>
