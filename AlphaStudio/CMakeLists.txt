@@ -152,14 +152,14 @@ set(ALPHAUI_SOURCES
     UI/InteractiveDAWApp.cpp
 )
 
-if(WIN32)
-    target_link_libraries(AlphaUI PUBLIC gdi32 comdlg32 user32 dwmapi winmm)
-endif()
-
 add_library(AlphaUI STATIC ${ALPHAUI_SOURCES})
 target_compile_options(AlphaUI PRIVATE ${ALPHASTUDIO_OWN_COMPILE_OPTIONS})
 target_include_directories(AlphaUI PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/..)
 target_link_libraries(AlphaUI PUBLIC AlphaCore AlphaSDK)
+
+if(WIN32)
+    target_link_libraries(AlphaUI PUBLIC gdi32 comdlg32 user32 dwmapi winmm)
+endif()
 
 if(ALPHASTUDIO_USE_EXTERNAL_IMGUI)
     target_compile_definitions(AlphaUI PUBLIC ALPHASTUDIO_HAS_EXTERNAL_IMGUI=1)
